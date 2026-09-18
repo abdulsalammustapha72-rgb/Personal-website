@@ -1,0 +1,112 @@
+.Hero-main {
+    display: flex;
+    justify-content:space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(212, 167, 167, 0.87);
+}
+
+.first-section {
+    width: 60%;
+}
+
+article h1 {
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 0;
+}
+
+.typing{ 
+    margin-left: 0;
+    color: rgb(70, 89, 123);
+    margin-bottom: .75rem;
+    font-size:3rem;
+}
+
+.p {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1.5rem;
+}
+
+.button-article {
+    display: flex;
+    gap: 1.35rem;
+}
+
+.project-btn {
+    padding: .75rem;
+    width: 250px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-btn {
+    padding: .75rem;
+    width: 250px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-btn {
+    background-color: #241010;
+    color: white;
+    font-weight: 400;
+}
+
+.contact-btn:hover, .project-btn:hover {
+    box-shadow: 2px 2px 2px #333;
+    transform: translateY(-2px);
+}
+
+.second-section {
+    width: 40%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+img {
+    border-radius: 14px;
+    width: 50%;
+    height: 60%;
+    margin-left: 5rem;
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 1rem;
+    background-color:#333;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 12px;
+}
+
+figcaption p {
+    display:flex;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .Hero-main {
+        display: flex;
+        justify-content: none;
+        flex-direction: column-reverse;
+    }
+
+    .first-section {
+        width: 100%;
+    }
+
+    .second-section{
+        width:100%;
+    }
+
+    figcaption {
+        width:100%;
+    }
+}

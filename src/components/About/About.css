@@ -1,0 +1,199 @@
+.About-main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-bottom: 1px solid rgba(212, 167, 167, 0.87);
+}
+
+.article-h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: .85rem;
+}
+
+.artic-h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.About-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.sectionOne, .sectionTwo {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sectionOne p {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top:20px;
+}
+
+.stats-grid article {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px;
+    border: 1px solid #090909;
+    border-radius: 8px;
+}
+
+.stats-grid span {
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #090909;
+}
+
+.stats-grid strong {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.sectionTwo-p {
+    font-size: 1.75rem;
+    margin-bottom: .45rem;
+    color: #333;
+    letter-spacing:1.24px;
+}
+
+.sectionTwo {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+.sectionTwo article {
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.sectionTwo article:hover {
+    border: 1px solid gold;
+    box-shadow: 2px 6px 5px #333;
+}
+
+.sectionTwo span {
+    font-weight: 400;
+    color: green;
+    margin-right: .55rem;
+}
+
+.sectionTwo h2 {
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sectionTwo p {
+    margin-left: 2.25rem;
+}
+
+.how-i-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.work-section, .section-brief {
+    flex: 1;
+    min-width: 300px;
+}
+
+.article-h3 {
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid rgba(212, 167, 167, 0.87);
+    margin-top: 1rem;
+    padding-top: .75rem;
+    margin-bottom: .85rem;
+}
+
+.artic-h3 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 400;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.work-section-p {
+    font-size: 1.75rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.work-flow {
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap;
+    text-align: center;
+    font-style: italic ;
+    font-size: 1.5rem;
+}
+
+.section-brief {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+.section-brief article {
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.section-brief article:hover {
+    border: 1px solid gold;
+    box-shadow: 2px 6px 5px #333;
+}
+
+.section-brief span {
+    font-weight: 400;
+    color: green;
+    margin-right: .55rem;
+}
+
+.section-brief h4 {
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section-brief p {
+    margin-left: 1.70rem;
+}
+
+@media (max-width: 824px) {
+    .sectionOne p {
+        font-size: 1.35rem;
+    }
+
+    .work-section-p {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 1114px) {
+    .About-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .how-i-work {
+        display: flex;
+        flex-direction: column;
+    }
+}
