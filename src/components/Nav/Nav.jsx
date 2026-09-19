@@ -5,7 +5,7 @@ import { useState } from 'react';
 import './Nav.css';
 
 const Nav = () => {
-    const [isOpen, setIsOpen] = useState('false');
+    const [isOpen, setIsOpen] = useState(false);
 
     const closeMenu = () => {
         setIsOpen(false);
